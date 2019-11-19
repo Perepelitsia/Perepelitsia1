@@ -6,3 +6,28 @@
 .text-contant{
 	margin-top: 40px;
 }
+footer.footer{
+	background-color: #EBE8E8;
+	margin-top: 45px;
+	padding-bottom: 15px;
+	border-top: 2px solid #CBC9C9;
+	border-bottom: 2px solid #CBC9C9;
+	text-align: center;
+}
+.footer-logo{
+	margin-top: 10px;
+	text-align: center;
+}
+.footer-logo-img{
+	width: 60px;
+	height: auto;
+	margin-top: 10px;
+}
+
+.footer-social-img{
+	width:45px;
+	height:auto;
+}
+.footer-bottom{
+	margin-top: 10px;
+}
