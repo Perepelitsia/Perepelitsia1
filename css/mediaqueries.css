@@ -26,10 +26,29 @@
   padding-top: 5px;
  }
 }
-
-@media screen and (max-width: 991px)
+@media screen and (max-width: 991px){
+  .logo-img{
+  max-width: 768px;
+  }
+  .col.col-md-12.cent {
+    text-align: center;
+  }
+  .mb-0{
+    padding-left: 60%;
+  }
+}
   
-@media screen and (max-width: 767px)
-  
-@media screen and (max-width: 576px)
-  
+@media screen and (max-width: 767px){
+  .small-logo{
+    display: none;
+  }
+  .mb-0{
+    padding-left: 50%;
+  }
+  .text-contant{
+  margin-top: 0px;
+}
+ .col-md-3.col-sm-12{
+  padding-top: 15px;
+ } 
+}  
