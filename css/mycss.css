@@ -6,6 +6,9 @@
 .text-contant{
 	margin-top: 40px;
 }
+.div-small{
+	display: none;
+}
 footer.footer{
 	background-color: #EBE8E8;
 	margin-top: 45px;
