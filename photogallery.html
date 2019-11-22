@@ -10,7 +10,23 @@
     <!-- My CSS -->
     <link rel="stylesheet" href="css/mycss.css">
     <link rel="stylesheet" href="css/mediaqueries.css">
+
     <title>Майстерня маленького принца</title>
+    <script type="text/javascript" src="./js/jquery-1.4.3.min.js"></script>
+    <script type="text/javascript" src="./js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+  <script type="text/javascript" src="./js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+  <link rel="stylesheet" type="text/css" href="./js/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+  <link rel="stylesheet" href="./jquery.fancybox-1.3.4/style.css" />
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $("a.photo").fancybox({
+        transitionIn: 'elastic',
+        transitionOut: 'elastic',
+        speedIn: 500,
+        speedOut: 500,
+      });
+    })
+  </script>
   </head>
   <body>
     <header>
@@ -51,7 +67,18 @@
     </div>
     </header>
     <div class="main-contant">
-     
+     <div class="gallery w-75 mx-auto">
+       <a rel="gallery" class="photo" href="img/gallery/big/01.jpg"><img src="img/gallery/smal/01.jpg" width="150" height="100"></a>
+      <a rel="gallery" class="photo" href="img/gallery/big/02.jpg"><img src="img/gallery/smal/02.jpg" width="150" height="100"></a>
+         <a rel="gallery" class="photo" href="img/gallery/big/03.jpg"><img src="img/gallery/smal/03.jpg" width="150" height="100"></a>
+         <a rel="gallery" class="photo" href="img/gallery/big/04.jpg"><img src="img/gallery/smal/04.jpg" width="150" height="100"></a>
+         <a  rel="gallery"class="photo" href="img/gallery/big/05.jpg"><img src="img/gallery/smal/05.jpg" width="150" height="100"></a>
+          <a rel="gallery" class="photo" href="img/gallery/big/06.jpg"><img src="img/gallery/smal/06.jpg" width="150" height="100"></a>
+          <a rel="gallery" class="photo" href="img/gallery/big/07.jpg"><img src="img/gallery/smal/07.jpg" width="150" height="100"></a>
+          <a rel="gallery" class="photo" href="img/gallery/big/08.jpg"><img src="img/gallery/smal/08.jpg" width="150" height="100"></a>
+          <a rel="gallery" class="photo" href="img/gallery/big/09.jpg"><img src="img/gallery/smal/09.jpg" width="150" height="100"></a>
+          <a rel="gallery" class="photo" href="img/gallery/big/10.jpg"><img src="img/gallery/smal/10.jpg" width="150" height="100"> </a> 
+     </div>
     </div>
     <footer class="footer">
       <div class="footer-logo">
@@ -87,10 +114,10 @@
       </p>
     </footer>
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
     <!-- My JavaScript-->
-    <script src="js/myjs.js"></script>
+    <!-- <script src="js/myjs.js"></script> -->
   </body>
 </html>

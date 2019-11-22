@@ -1,3 +1,4 @@
+/*style for main page*/
 .logo-img{
 	display: flex;
 	margin-left: auto;
@@ -32,4 +33,12 @@ footer.footer{
 }
 .footer-bottom{
 	margin-top: 10px;
+}
+/*style for gallery*/
+.gallery img{
+	margin: 5px;
+    border:3px solid #b6b5b2;
+}
+a.photo:hover img{
+	border:3px solid #58544d;
 }
