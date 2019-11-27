@@ -12,18 +12,22 @@
     <link rel="stylesheet" href="css/mediaqueries.css">
 
     <title>Майстерня маленького принца</title>
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script type="text/javascript" src="./js/jquery-1.4.3.min.js"></script>
     <script type="text/javascript" src="./js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
   <script type="text/javascript" src="./js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
   <link rel="stylesheet" type="text/css" href="./js/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
   <link rel="stylesheet" href="./jquery.fancybox-1.3.4/style.css" />
   <script type="text/javascript">
-    $(document).ready(function() {
+    $ (document).ready(function() {
       $("a.photo").fancybox({
         transitionIn: 'elastic',
         transitionOut: 'elastic',
         speedIn: 500,
         speedOut: 500,
+        titlePosition:'over',
       });
     })
   </script>
@@ -32,52 +36,88 @@
     <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="index.html"><img class="w-25" src="img/logo.png"></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="news.html">НОВИНИ</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            ГАЛЕРЕЯ
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="photogallery.html">ФОТО</a>
-            <a class="dropdown-item" href="videogallery.html">ВІДЕО</a>
-            </div>
-         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="respond.html">ВІДГУКИ</a>
-        </li>
-          <li class="nav-item">
-          <a class="nav-link" href="contacts.html">КОНТАКТИ</a>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0 ml-3">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="news.html">НОВИНИ</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ГАЛЕРЕЯ</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="photogallery.html">ФОТО</a>
+                <a class="dropdown-item" href="videogallery.html">ВІДЕО</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="respond.html">ВІДГУКИ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacts.html">КОНТАКТИ</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0 ml-3">
           <input class="form-control mr-sm-2" type="search" placeholder="Пошук по сайту" aria-label="Search">
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Пошук</button>
-        </form>
+          </form>
+        </div>
+      </nav> 
+      <div class="main-top-logo">
+        <img class="logo-img" src="img/logo_image.jpg">
       </div>
-    </nav> 
-    <div class="small-logo">
-    <img class="logo-img" src="img/logo_image.jpg">
-    </div>
     </header>
     <div class="main-contant">
+      <div class="gallery w-75 mx-auto">
+        <p class="name-album w-75">ВИСТАВА «ВІДЬМА. СПОКУСА – НАЙДОРОЖЧИЙ ГРІХ»</p>
+       <a rel="gallery" class="photo" href="img/gallery/album1/big/01.jpg"><img src="img/gallery/album1/smal/01.jpg" width="150" height="100"></a>
+        <a rel="gallery" class="photo" href="img/gallery/album1/big/02.jpg"><img src="img/gallery/album1/smal/02.jpg" width="150" height="100"></a>
+         <a rel="gallery" class="photo" href="img/gallery/album1/big/03.jpg"><img src="img/gallery/album1/smal/03.jpg" width="150" height="100"></a>
+         <a rel="gallery" class="photo" href="img/gallery/album1/big/04.jpg"><img src="img/gallery/album1/smal/04.jpg" width="150" height="100"></a>
+         <a  rel="gallery"class="photo" href="img/gallery/album1/big/05.jpg"><img src="img/gallery/album1/smal/05.jpg" width="150" height="100"></a>
+          <a rel="gallery" class="photo" href="img/gallery/album1/big/06.jpg"><img src="img/gallery/album1/smal/06.jpg" width="150" height="100"></a>
+          <a rel="gallery" class="photo" href="img/gallery/album1/big/07.jpg"><img src="img/gallery/album1/smal/07.jpg" width="150" height="100"></a>
+          <a rel="gallery" class="photo" href="img/gallery/album1/big/08.jpg"><img src="img/gallery/album1/smal/08.jpg" width="150" height="100"></a>
+          <a rel="gallery" class="photo" href="img/gallery/album1/big/09.jpg"><img src="img/gallery/album1/smal/09.jpg" width="150" height="100"></a>
+          <a rel="gallery" class="photo" href="img/gallery/album1/big/10.jpg"><img src="img/gallery/album1/smal/10.jpg" width="150" height="100"> </a>
+          <a rel="gallery" class="photo" href="img/gallery/album1/big/11.jpg"><img src="img/gallery/album1/smal/11.jpg" width="150" height="100"> </a>  
+          <a rel="gallery" class="photo" href="img/gallery/album1/big/12.jpg"><img src="img/gallery/album1/smal/12.jpg" width="150" height="100"> </a> 
+          <a rel="gallery" class="photo" href="img/gallery/album1/big/13.jpg"><img src="img/gallery/album1/smal/13.jpg" width="150" height="100"> </a> 
+          <a rel="gallery" class="photo" href="img/gallery/album1/big/14.jpg"><img src="img/gallery/album1/smal/14.jpg" width="150" height="100"> </a> 
+     </div>
      <div class="gallery w-75 mx-auto">
-       <a rel="gallery" class="photo" href="img/gallery/big/01.jpg"><img src="img/gallery/smal/01.jpg" width="150" height="100"></a>
-      <a rel="gallery" class="photo" href="img/gallery/big/02.jpg"><img src="img/gallery/smal/02.jpg" width="150" height="100"></a>
-         <a rel="gallery" class="photo" href="img/gallery/big/03.jpg"><img src="img/gallery/smal/03.jpg" width="150" height="100"></a>
-         <a rel="gallery" class="photo" href="img/gallery/big/04.jpg"><img src="img/gallery/smal/04.jpg" width="150" height="100"></a>
-         <a  rel="gallery"class="photo" href="img/gallery/big/05.jpg"><img src="img/gallery/smal/05.jpg" width="150" height="100"></a>
-          <a rel="gallery" class="photo" href="img/gallery/big/06.jpg"><img src="img/gallery/smal/06.jpg" width="150" height="100"></a>
-          <a rel="gallery" class="photo" href="img/gallery/big/07.jpg"><img src="img/gallery/smal/07.jpg" width="150" height="100"></a>
-          <a rel="gallery" class="photo" href="img/gallery/big/08.jpg"><img src="img/gallery/smal/08.jpg" width="150" height="100"></a>
-          <a rel="gallery" class="photo" href="img/gallery/big/09.jpg"><img src="img/gallery/smal/09.jpg" width="150" height="100"></a>
-          <a rel="gallery" class="photo" href="img/gallery/big/10.jpg"><img src="img/gallery/smal/10.jpg" width="150" height="100"> </a> 
+        <p class="name-album w-75">ПРИЄМНІ МОМЕНТИ З ВИСТАВИ "НА ВАРТІ ТВОЇХ СНІВ"</p>
+       <a rel="gallery" class="photo" href="img/gallery/album2/big/01.jpg"><img src="img/gallery/album2/smal/01.jpg" width="150" height="100"></a>
+        <a rel="gallery" class="photo" href="img/gallery/album2/big/02.jpg"><img src="img/gallery/album2/smal/02.jpg" width="150" height="100"></a>
+         <a rel="gallery" class="photo" href="img/gallery/album2/big/03.jpg"><img src="img/gallery/album2/smal/03.jpg" width="150" height="100"></a>
+         <a rel="gallery" class="photo" href="img/gallery/album2/big/04.jpg"><img src="img/gallery/album2/smal/04.jpg" width="150" height="100"></a>
+         <a  rel="gallery"class="photo" href="img/gallery/album2/big/05.jpg"><img src="img/gallery/album2/smal/05.jpg" width="150" height="100"></a>
+          <a rel="gallery" class="photo" href="img/gallery/album2/big/06.jpg"><img src="img/gallery/album2/smal/06.jpg" width="150" height="100"></a>
+          <a rel="gallery" class="photo" href="img/gallery/album2/big/07.jpg"><img src="img/gallery/album2/smal/07.jpg" width="150" height="100"></a>
+          <a rel="gallery" class="photo" href="img/gallery/album2/big/08.jpg"><img src="img/gallery/album2/smal/08.jpg" width="150" height="100"></a>
+     </div>
+     <div class="gallery w-75 mx-auto">
+        <p class="name-album w-75">ТВІР ФРАНЦУЗЬКОГО ПИСЬМЕННИКА А. СЕНТ-ЕКЗЮПЕРІ «МАЛЕНЬКИЙ ПРИНЦ». НАШ ПОГЛЯД.</p>
+       <a rel="gallery" class="photo" href="img/gallery/album3/big/01.jpg"><img src="img/gallery/album3/smal/01.jpg" width="150" height="100"></a>
+        <a rel="gallery" class="photo" href="img/gallery/album3/big/02.jpg"><img src="img/gallery/album3/smal/02.jpg" width="150" height="100"></a>
+         <a rel="gallery" class="photo" href="img/gallery/album3/big/03.jpg"><img src="img/gallery/album3/smal/03.jpg" width="150" height="100"></a>
+         <a rel="gallery" class="photo" href="img/gallery/album3/big/04.jpg"><img src="img/gallery/album3/smal/04.jpg" width="150" height="100"></a>
+         <a  rel="gallery"class="photo" href="img/gallery/album3/big/05.jpg"><img src="img/gallery/album3/smal/05.jpg" width="150" height="100"></a>
+          <a rel="gallery" class="photo" href="img/gallery/album3/big/06.jpg"><img src="img/gallery/album3/smal/06.jpg" width="150" height="100"></a>
+          <a rel="gallery" class="photo" href="img/gallery/album3/big/07.jpg"><img src="img/gallery/album3/smal/07.jpg" width="150" height="100"></a>
+          <a rel="gallery" class="photo" href="img/gallery/album3/big/08.jpg"><img src="img/gallery/album3/smal/08.jpg" width="150" height="100"></a>
+          <a rel="gallery" class="photo" href="img/gallery/album3/big/09.jpg"><img src="img/gallery/album3/smal/09.jpg" width="150" height="100"></a>
+          <a rel="gallery" class="photo" href="img/gallery/album3/big/10.jpg"><img src="img/gallery/album3/smal/10.jpg" width="150" height="100"> </a>
+     </div>
+     <div class="gallery w-75 mx-auto">
+        <p class="name-album w-75">ВЕСІЛЛЯ.КОРПОРАТИВИ.МАСОВІ ЗАХОДИ</p>
+       <a rel="gallery" class="photo" href="img/gallery/album4/big/01.jpg"><img src="img/gallery/album4/smal/01.jpg" width="150" height="100"></a>
+        <a rel="gallery" class="photo" href="img/gallery/album4/big/02.jpg"><img src="img/gallery/album4/smal/02.jpg" width="150" height="100"></a>
+         <a rel="gallery" class="photo" href="img/gallery/album4/big/03.jpg"><img src="img/gallery/album4/smal/03.jpg" width="150" height="100"></a>
+         <a rel="gallery" class="photo" href="img/gallery/album4/big/04.jpg"><img src="img/gallery/album4/smal/04.jpg" width="150" height="100"></a>
+         <a  rel="gallery"class="photo" href="img/gallery/album4/big/05.jpg"><img src="img/gallery/album4/smal/05.jpg" width="150" height="100"></a>
+          <a rel="gallery" class="photo" href="img/gallery/album4/big/06.jpg"><img src="img/gallery/album4/smal/06.jpg" width="150" height="100"></a>
      </div>
     </div>
     <footer class="footer">

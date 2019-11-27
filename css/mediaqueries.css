@@ -8,10 +8,10 @@
  .text-contant{
   font-size: 0.9rem;
  }
- .div{
+ .list-services{
   display: none;
  }
- .div-small{
+ .list-services-small{
   display: block;
   margin-top: 15px;
   margin-left: 20px;
@@ -19,10 +19,10 @@
  .footer-social.mt-3.w-25.mx-auto{
   width: 50%!important;
  }
- .div-small li{
+ .list-services-small li{
   padding-top: 5px;
  }
- .footer-bottom{
+ .footer-signature{
   padding-top: 5px;
  }
 }
@@ -39,7 +39,7 @@
 }
   
 @media screen and (max-width: 767px){
-  .small-logo{
+  .main-top-logo{
     display: none;
   }
   .mb-0{
@@ -53,5 +53,11 @@
  } 
  .gas{
   width:250px
+  }
+  .col.info{
+    display: none;
+  }
+  .col.info-small{
+  display: block;
 }
 }  
